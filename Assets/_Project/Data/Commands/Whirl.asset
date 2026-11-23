@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad432a4d7165a649889750c0f6d1d2a, type: 3}
+  m_Name: Whirl
+  m_EditorClassIdentifier: CopyCommand::CopyCommand.CommandData
+  displayName: "\u56DE\u8EE2\u65AC\u308A"
+  type: 4
+  description: "\u65B9\u5411\u306A\u3057\n\u4E0A\u4E0B\u5DE6\u53F3\u306E\u96A3\u306B3\u30C0\u30E1\u30FC\u30B8"
+  copyNote: "\u65B9\u5411\u304C\u7121\u3044\u306E\u3067\u3001\u307E\u306D\u306E\u6642\u70B9\u3067\u6575\u306E\u96A3\u306B\u3044\u308B\u3068\u5FC5\u305A\u5F53\u305F\u308B"
+  minDistance: 0
+  maxDistance: 0
+  damage: 3
+  range: 1

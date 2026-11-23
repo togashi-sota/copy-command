@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad432a4d7165a649889750c0f6d1d2a, type: 3}
+  m_Name: Rush
+  m_EditorClassIdentifier: CopyCommand::CopyCommand.CommandData
+  displayName: "\u7A81\u9032"
+  type: 1
+  description: "3\u30DE\u30B9\u56FA\u5B9A\u3067\u79FB\u52D5\uFF08\u9014\u4E2D\u3067\u6B62\u3081\u3089\u308C\u306A\u3044\uFF09\u3002\u3076\u3064\u304B\u3063\u305F\u3089\u624B\u524D\u3067\u6B62\u307E\u308B"
+  copyNote: "\u6575\u3082\u540C\u3058\u65B9\u5411\u30783\u30DE\u30B9\u7A81\u9032\uFF08\u8DDD\u96E2\u3082\u540C\u3058\uFF09\u3002\u6575\u306E\u901A\u308A\u9053\u306B\u30C8\u30B2\u304C\u3042\u308C\u3070\u81EA\u5206\u304B\u3089\u8E0F\u3080"
+  minDistance: 3
+  maxDistance: 3
+  damage: 0
+  range: 1
+  notCopied: 0
+  copyMirrored: 0
+  copyDamageCut: 0
+  copyDistanceCut: 0
+  exhaust: 0
+  selfInert: 0
+  planDraw: 0
+  drawFilter: 0
+  fromDiscard: 0
+  resonateDraw: 0
+  copyKillDraw: 0
+  copyWide: 0
+  tactic: 0

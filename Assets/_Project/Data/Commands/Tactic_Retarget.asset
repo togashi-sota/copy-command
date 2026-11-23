@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad432a4d7165a649889750c0f6d1d2a, type: 3}
+  m_Name: Tactic_Retarget
+  m_EditorClassIdentifier: CopyCommand::CopyCommand.CommandData
+  displayName: "\u7167\u6E96\u66FF\u3048"
+  type: 27
+  description: "\u4E88\u544A\u4E2D\u306E\u5927\u6280\u3092\u6483\u3064\u6575\u3068\u3001\u65B0\u3057\u3044\u72D9\u3044\u306E\u6575\u3092\u9078\u3076\u3002\u5927\u6280\u304C\u305D\u306E\u6575\u306E\u3044\u308B\u5834\u6240\u3092\u72D9\u3044\u76F4\u3059\uFF08\u5468\u308A\u3092\u6253\u3064\u6280\u30FB\u5411\u3044\u305F\u65B9\u3078\u6483\u3064\u6280\u30FB\u4E09\u9023\u5C04\u306F\u5411\u3051\u76F4\u305B\u306A\u3044\uFF09\u3002"
+  copyNote: "\u6226\u8853\u672D\uFF1A\u547D\u4EE4\u67A0\u3092\u4F7F\u308F\u306A\u3044\u3002\u6575\u306F\u307E\u306D\u3057\u306A\u3044"
+  minDistance: 0
+  maxDistance: 0
+  damage: 0
+  range: 1
+  notCopied: 1
+  copyMirrored: 0
+  copyDamageCut: 0
+  copyDistanceCut: 0
+  exhaust: 0
+  selfInert: 0
+  planDraw: 0
+  drawFilter: 0
+  fromDiscard: 0
+  resonateDraw: 0
+  copyKillDraw: 0
+  copyWide: 0
+  tactic: 18

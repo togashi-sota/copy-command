@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4bd3a7850d11d4aaa7a7b41fb6a4b5, type: 3}
+  m_Name: Stage1
+  m_EditorClassIdentifier: CopyCommand::CopyCommand.StageData
+  stageTitle: "STAGE 1 \u30B3\u30D4\u30FC\u3055\u308C\u308B"
+  buttonLabel: 1
+  isTestStage: 0
+  tutorialText: "\u3042\u306A\u305F\u304C\u4F7F\u3063\u305F\u6280\u306F\u3001\u6B21\u306E ENEMY TURN \u306B\u6575\u304C\u3010\u540C\u3058\u6280\u30FB\u540C\u3058\u65B9\u5411\u30FB\u540C\u3058\u9806\u756A\u3011\u3067\u4F7F\u3044\u307E\u3059\u3002\n\u307E\u305A\u306F \u2460\u4E00\u6B69 \u2192\u53F3\u3000\u2461\u65AC\u6483 \u2192\u53F3 \u3092\u767B\u9332\u3057\u3066\u300C\u5B9F\u884C\u300D\u3057\u3066\u307F\u3088\u3046\u3002\n\u767B\u9332\u3057\u305F\u547D\u4EE4\u306F\u3001\u53F3\u306E\u8D64\u3044\u67A0\u300C\u6575\u306E\u4E88\u5B9A\u300D\u306B\u3082\u305D\u306E\u307E\u307E\u5165\u308A\u307E\u3059\u3002"
+  hintAfterFirstTurn: "\u6575\u3082\u300C\u4E00\u6B69 \u2192\u53F3\u300D\u300C\u65AC\u6483 \u2192\u53F3\u300D\u3092\u4F7F\u3063\u305F\uFF1F \u6575\u306E\u65AC\u6483\u306F\u3001\u6575\u306E\u3055\u3089\u306B\u53F3\u306B\u51FA\u3066\u7A7A\u632F\u308A\u3057\u305F\u306F\u305A\u3002\n\u540C\u3058\u547D\u4EE4\u3067\u3082\u3001\u4F7F\u3046\u4EBA\u306E\u4F4D\u7F6E\u304C\u9055\u3048\u3070\u7D50\u679C\u304C\u5909\u308F\u308B\u3002\u6575\u306E\u5DE6\u304B\u3089\u53F3\u3078\u65AC\u308C\u3070\u3001\u6575\u306E\u30B3\u30D4\u30FC\u306F\u5F53\u305F\u3089\u306A\u3044\u3002\n\u9006\u306B\u3001\u6575\u306E\u3044\u306A\u3044\u65B9\u5411\u3078\u65AC\u308B\u3068\u2026\uFF1F"
+  visualTheme: {fileID: 0}
+  map: '.......
+
+    .P.E...
+
+    .......'
+  playerMaxHp: 12
+  playerStartHp: 0
+  enemyMaxHp: 12
+  spikeDamage: 5
+  maxSlots: 2
+  availableCommands:
+  - {fileID: 11400000, guid: 1926eb297154f494aa855d10d989b60b, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  handTestDeck: []
+  handTestDeckLarge: []
+  handTestOpeningCount: 0
+  handTestKeepOrder: 0
+  handTestGuaranteeAttack: 0
+  stagnationAllowed: 0
+  stagnationMax: 3
+  stagnationPenalties: 020000000300000004000000i
+  enemyFacings: 
+  firePatterns: []
+  fireDamage: 3
+  fireAfterKnightHalf: 0
+  runeUses: 3
+  runeHeal: 3
+  healTileAmount: 4
+  copySandbox: 0
+  copyMode: 0
+  enemyHpList: 
+  sandboxGoal: 
+  enemyCopyTypes: 
+  copyLab: 0
+  coreGuard: 0
+  goal: 0
+  goalText: 
+  statueFacings: 
+  statueSpin: 0
+  circleGuard: 0
+  puzzleRoom: 0
+  combatRoom: 0
+  turnLimit: 0
+  combatV4: 0
+  noClocks: 0
+  stillEnemies: 0
+  bomberAim: 
+  clocksReady: 0
+  clocksReadyOnly: 
+  clockKeep: 0
+  tutorialStep: 0
+  hazardName: 
+  enemyInnateAction: {fileID: 0}
+  altMaps: []

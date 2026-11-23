@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad432a4d7165a649889750c0f6d1d2a, type: 3}
+  m_Name: Resonance
+  m_EditorClassIdentifier: CopyCommand::CopyCommand.CommandData
+  displayName: "\u5171\u9CF4\u88DC\u7D66"
+  type: 26
+  description: "\u3053\u306E\u30E9\u30A6\u30F3\u30C9\u306B\u3001\u6575\u306E\u307E\u306D\u3067\u4ED5\u639B\u3051\uFF08\u5C01\u5370\u77F3\u30FB\u77F3\u50CF\u30FB\u93E1\u6838\u30FB\u6249\u306A\u3069\uFF09\u304C\u52D5\u3044\u305F\u3089\u3001\u6B21\u306E\u30BF\u30FC\u30F3 +2\u679A"
+  copyNote: "\u6575\u306F\u4F55\u3082\u3057\u306A\u3044\uFF08\u547D\u4EE41\u3064\u5206\u304C\u7A7A\u304F\uFF09"
+  minDistance: 0
+  maxDistance: 0
+  damage: 0
+  range: 2
+  notCopied: 0
+  copyMirrored: 0
+  copyDamageCut: 0
+  copyDistanceCut: 0
+  exhaust: 0
+  selfInert: 0
+  planDraw: 0
+  drawFilter: 0

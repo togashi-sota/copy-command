@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4bd3a7850d11d4aaa7a7b41fb6a4b5, type: 3}
+  m_Name: StageV4
+  m_EditorClassIdentifier: CopyCommand::CopyCommand.StageData
+  stageTitle: "V4 \u7832\u5175\uFF0B\u5B89\u5168\u5730\u5E2F\u306E\u79FB\u52D5"
+  buttonLabel: V4
+  isTestStage: 1
+  tutorialText: "\u7832\u5175\uFF08\u7832\uFF09\uFF1A\u3042\u306A\u305F\u306E\u3044\u308B\u5834\u6240\u3092\u4E2D\u5FC3\u306B\u5341\u5B575\u30DE\u30B9\u3092\u4E88\u544A\u3057\uFF08\u6A59\u306E\xD7\uFF09\u3001\u6B21\u306E\u30E9\u30A6\u30F3\u30C9\u306B\u7206\u767A\uFF083\u30FB\u6575\u306B\u3082\uFF09\u3002\u6B62\u307E\u3063\u3066\u3044\u308B\u3068\u5F53\u305F\u308B\u3002\n\u708E\u5E8A\uFF1A\u5DE6\u534A\u5206\uFF0B\u4E2D\u592E\u306E\u5217 \u2192 \u53F3\u534A\u5206\uFF0B\u4E2D\u592E\u306E\u5217 \u304C\u4EA4\u4E92\u306B\u71C3\u3048\u308B\uFF08\u4E0A\u4E0B\u306E\u884C\u306F\u71C3\u3048\u306A\u3044\uFF09\u3002\u6700\u521D\u306E\u30E9\u30A6\u30F3\u30C9\u306F\u5DE6\u5074\u304C\u71C3\u3048\u308B\u3002\n\u5B89\u5168\u306A\u5074\u3078\u52D5\u304D\u7D9A\u3051\u308B\u3002\u7206\u767A\u3084\u708E\u306B\u6575\u3092\u6B8B\u3059\u3002"
+  hintAfterFirstTurn: 
+  visualTheme: {fileID: 11400000, guid: f4bce0599b2a8e7448c4c1faf1f3b230, type: 2}
+  map: '...O...
+
+    .......
+
+    .......
+
+    ...P...
+
+    .......
+
+    .S.....'
+  playerMaxHp: 12
+  playerStartHp: 0
+  enemyMaxHp: 14
+  spikeDamage: 3
+  maxSlots: 3
+  availableCommands:
+  - {fileID: 11400000, guid: 1926eb297154f494aa855d10d989b60b, type: 2}
+  - {fileID: 11400000, guid: 33cfc61658fd00745bae6e602db3083b, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: 04c35dcf50501ec4494cd446c02bc20f, type: 2}
+  handTestDeck:
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: 1926eb297154f494aa855d10d989b60b, type: 2}
+  - {fileID: 11400000, guid: 33cfc61658fd00745bae6e602db3083b, type: 2}
+  - {fileID: 11400000, guid: 04c35dcf50501ec4494cd446c02bc20f, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: 1926eb297154f494aa855d10d989b60b, type: 2}
+  - {fileID: 11400000, guid: 04c35dcf50501ec4494cd446c02bc20f, type: 2}
+  - {fileID: 11400000, guid: 33cfc61658fd00745bae6e602db3083b, type: 2}
+  - {fileID: 11400000, guid: 1926eb297154f494aa855d10d989b60b, type: 2}
+  handTestDeckLarge:
+  - {fileID: 11400000, guid: 1926eb297154f494aa855d10d989b60b, type: 2}
+  - {fileID: 11400000, guid: 1926eb297154f494aa855d10d989b60b, type: 2}
+  - {fileID: 11400000, guid: 1926eb297154f494aa855d10d989b60b, type: 2}
+  - {fileID: 11400000, guid: 33cfc61658fd00745bae6e602db3083b, type: 2}
+  - {fileID: 11400000, guid: 33cfc61658fd00745bae6e602db3083b, type: 2}
+  - {fileID: 11400000, guid: 33cfc61658fd00745bae6e602db3083b, type: 2}
+  - {fileID: 11400000, guid: 1a7eb22f23e9a9b4cb6dedbc75ff94cc, type: 2}
+  - {fileID: 11400000, guid: 1a7eb22f23e9a9b4cb6dedbc75ff94cc, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: c1511cd85a3648948a3c612ae998942b, type: 2}
+  - {fileID: 11400000, guid: c1511cd85a3648948a3c612ae998942b, type: 2}
+  - {fileID: 11400000, guid: e458d45a99241cc49ad9fcbfb44ac257, type: 2}
+  - {fileID: 11400000, guid: 7f081bc0781aec64da8d7a82f652f9b8, type: 2}
+  - {fileID: 11400000, guid: a6ddd3bcefa5da4439e3bbc32c6a3093, type: 2}
+  - {fileID: 11400000, guid: 04c35dcf50501ec4494cd446c02bc20f, type: 2}
+  - {fileID: 11400000, guid: 04c35dcf50501ec4494cd446c02bc20f, type: 2}
+  - {fileID: 11400000, guid: 16192e430aa734a478b29006e1c6685e, type: 2}
+  - {fileID: 11400000, guid: abafa813ee076394ca377eb82b1353c1, type: 2}
+  handTestOpeningCount: 5
+  handTestKeepOrder: 1
+  handTestGuaranteeAttack: 1
+  stagnationAllowed: 1
+  stagnationMax: 3
+  stagnationPenalties: 020000000300000004000000i
+  enemyFacings: DU
+  firePatterns:
+  - ......./FFFF.../FFFF.../FFFF.../FFFF.../.......
+  - ......./...FFFF/...FFFF/...FFFF/...FFFF/.......
+  fireDamage: 3
+  fireAfterKnightHalf: 0
+  runeUses: 3
+  runeHeal: 3
+  healTileAmount: 4
+  copySandbox: 0
+  copyMode: 0
+  enemyHpList: 
+  sandboxGoal: 
+  enemyCopyTypes: 
+  copyLab: 0
+  coreGuard: 0
+  goal: 0
+  goalText: 
+  statueFacings: 
+  statueSpin: 0
+  circleGuard: 0
+  puzzleRoom: 0
+  combatRoom: 0
+  turnLimit: 0
+  combatV4: 0
+  noClocks: 0
+  stillEnemies: 0
+  bomberAim: 
+  clocksReady: 0
+  clocksReadyOnly: 
+  clockKeep: 0
+  tutorialStep: 0
+  hazardName: 
+  enemyInnateAction: {fileID: 0}
+  altMaps: []

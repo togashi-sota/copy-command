@@ -1,0 +1,6 @@
+{
+    "name": "CopyCommand",
+    "rootNamespace": "CopyCommand",
+    "references": [],
+    "autoReferenced": true
+}

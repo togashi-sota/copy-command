@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{{ GAME_TITLE }}}</title>
+    <style>
+      html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #07080d; }
+      body { font-family: "BIZ UDPGothic", "Yu Gothic UI", "Meiryo", sans-serif; color: #d8dcea; }
+      #stage { position: absolute; left: 0; top: 0; right: 0; bottom: 28px; display: flex; align-items: center; justify-content: center; background: #000; }
+      #unity-canvas { display: block; background: #0b0d16; outline: none; }
+      #loading { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 320px; text-align: center; font-size: 14px; }
+      #bar { margin-top: 10px; height: 8px; background: #23263a; border-radius: 4px; overflow: hidden; }
+      #bar-full { height: 100%; width: 0%; background: #d9b45a; }
+      #mobile { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: min(90%, 420px); padding: 20px; box-sizing: border-box; text-align: center; font-size: 15px; line-height: 1.7; background: #141826; border: 1px solid #4a4f6a; border-radius: 8px; }
+      #mobile button { margin-top: 12px; cursor: pointer; border: 1px solid #4a4f6a; background: #161927; color: #d8dcea; border-radius: 4px; padding: 6px 14px; font-size: 13px; }
+      #message { position: absolute; left: 50%; top: 12px; transform: translateX(-50%); max-width: 90%; padding: 8px 14px; border-radius: 6px; font-size: 13px; line-height: 1.6; display: none; }
+      #footer { position: absolute; left: 0; right: 0; bottom: 0; height: 28px; display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 0 10px; box-sizing: border-box; font-size: 12px; color: #8a8fa8; }
+      #footer span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+      #footer a { color: #9fb8e6; }
+      #fullscreen { flex: none; white-space: nowrap; cursor: pointer; border: 1px solid #4a4f6a; background: #161927; color: #d8dcea; border-radius: 4px; padding: 2px 10px; font-size: 12px; }
+      #fullscreen:hover { background: #22263a; }
+      /* 全画面（ページごと）：下の帯を隠し、16:9 と黒い帯はそのまま（fit） */
+      body.fs #footer { display: none; }
+      body.fs #stage { bottom: 0; }
+    </style>
+  </head>
+  <body>
+    <div id="stage">
+      <canvas id="unity-canvas" width="{{{ WIDTH }}}" height="{{{ HEIGHT }}}" tabindex="-1"></canvas>
+      <div id="loading" hidden><span id="loading-text">読み込み中…</span><div id="bar"><div id="bar-full"></div></div></div>
+      <div id="mobile" hidden>
+        このゲームはパソコンのブラウザ（Chrome・Edge）で遊んでください。<br>スマートフォン・タブレットでは操作できない所があります。
+        <br><button id="mobile-load" type="button">それでも読み込む</button>
+      </div>
+    </div>
+    <div id="message"></div>
+    <div id="footer">
+      <span>{{{ GAME_TITLE }}} ver {{{ PRODUCT_VERSION }}}　／　PC のブラウザ向け　／　<a id="credits" href="credits.html" target="_blank" rel="noopener">説明書・クレジット</a></span>
+      <button id="fullscreen" type="button" title="全画面（Esc で戻ります。命令を戻すときは Backspace）">全画面</button>
+    </div>
+    <script>
+#if DEVELOPMENT_PLAYER
+      // 確認用（開発ビルドで、URL に ?qa=1 のときだけ）：音の状態を記録する。外へは何も送らない
+      if (/[?&]qa=1/.test(location.search) && window.AudioContext) {
+        window.__qaAudio = { contexts: [], starts: 0, loopStarts: 0 };
+        var OrigAC = window.AudioContext;
+        window.AudioContext = function () { var c = new OrigAC(...arguments); window.__qaAudio.contexts.push(c); return c; };
+        window.AudioContext.prototype = OrigAC.prototype;
+        if (window.webkitAudioContext) window.webkitAudioContext = window.AudioContext;
+        var origStart = AudioBufferSourceNode.prototype.start;
+        AudioBufferSourceNode.prototype.start = function () { window.__qaAudio.starts++; if (this.loop) window.__qaAudio.loopStarts++; return origStart.apply(this, arguments); };
+      }
+#endif
+
+      var canvas = document.querySelector("#unity-canvas");
+      var stage = document.querySelector("#stage");
+      var ASPECT = 16 / 9;
+      var RETRY_HINT = "Chrome・Edge の最新版で開き直してください（ハードウェア アクセラレーションが OFF だと動きません）。";
+
+      // 窓に収まる一番大きい 16:9 にする（余りは黒い帯）。描画の解像度は Unity が DOM の大きさ×devicePixelRatio に合わせる。
+      function fit() {
+        var w = stage.clientWidth, h = stage.clientHeight;
+        if (w <= 0 || h <= 0) return;
+        if (w / h > ASPECT) w = Math.floor(h * ASPECT); else h = Math.floor(w / ASPECT);
+        canvas.style.width = w + "px";
+        canvas.style.height = h + "px";
+      }
+      // ページの拡大（Ctrl＋ホイール）や、表示倍率の違う画面へ窓を動かしたときも、解像度を合わせる
+      var unityInst = null;
+      function syncDpr() {
+        var d = Math.min(window.devicePixelRatio || 1, 2);
+        if (typeof config !== "undefined") config.devicePixelRatio = d;
+        if (unityInst && unityInst.Module) unityInst.Module.devicePixelRatio = d;
+      }
+      window.addEventListener("resize", function () { fit(); syncDpr(); });
+      fit();
+
+      function showMessage(msg, type) {
+        var box = document.querySelector("#message");
+        box.textContent = msg;
+        box.style.display = "block";
+        box.style.background = type == "error" ? "#7a1f2a" : "#5a4a1a";
+        if (type != "error") setTimeout(function () { box.style.display = "none"; }, 6000);
+      }
+
+      // 矢印キー・スペースでページが動かないように（ゲームが矢印キーを使う）
+      window.addEventListener("keydown", function (e) {
+        if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", " ", "Tab"].indexOf(e.key) >= 0) e.preventDefault();
+      }, { passive: false });
+      canvas.addEventListener("contextmenu", function (e) { e.preventDefault(); }); // 右クリックは札の選択の取り消しに使う（ブラウザのメニューを出さない）
+
+      // 全画面：ページごと全画面にする（下の帯を隠して 16:9 と黒い帯を保つ）。Esc はブラウザが全画面の解除に使う
+      var fsButton = document.querySelector("#fullscreen");
+      var root = document.documentElement;
+      function isFullscreen() { return !!(document.fullscreenElement || document.webkitFullscreenElement); }
+      function onFullscreenChange() {
+        document.body.classList.toggle("fs", isFullscreen());
+        fit(); syncDpr();
+        requestAnimationFrame(function () { fit(); syncDpr(); });
+        canvas.focus();
+      }
+      document.addEventListener("fullscreenchange", onFullscreenChange);
+      document.addEventListener("webkitfullscreenchange", onFullscreenChange);
+      if (!(document.fullscreenEnabled || document.webkitFullscreenEnabled)) fsButton.hidden = true;
+      fsButton.onclick = function () {
+        if (isFullscreen()) return;
+        var p = root.requestFullscreen ? root.requestFullscreen() : (root.webkitRequestFullscreen ? root.webkitRequestFullscreen() : null);
+        if (p && p.catch) p.catch(function () { showMessage("全画面にできませんでした（ブラウザの設定で止められています）。", "warning"); });
+        canvas.focus(); // ボタンにフォーカスが残ると、Enter（実行）でボタンがもう一度押される
+      };
+
+      var buildUrl = "Build";
+      var config = {
+        arguments: [],
+#if PROGRESSIVE_ASSET_LOADING
+        primaryDataUrls: {{{ JSON.stringify(PRIMARY_DATA_FILES) }}},
+        secondaryDataUrls: {{{ JSON.stringify(SECONDARY_DATA_FILES) }}},
+#else
+        dataUrl: buildUrl + "/{{{ DATA_FILENAME }}}",
+#endif
+        frameworkUrl: buildUrl + "/{{{ FRAMEWORK_FILENAME }}}",
+#if USE_WASM
+        codeUrl: buildUrl + "/{{{ CODE_FILENAME }}}",
+#endif
+#if SYMBOLS_FILENAME
+        symbolsUrl: buildUrl + "/{{{ SYMBOLS_FILENAME }}}",
+#endif
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: {{{ JSON.stringify(COMPANY_NAME) }}},
+        productName: {{{ JSON.stringify(PRODUCT_NAME) }}},
+        productVersion: {{{ JSON.stringify(PRODUCT_VERSION) }}},
+        showBanner: showMessage,
+        // 高精細の画面でも文字がつぶれないように。ただし重くなりすぎないよう 2 倍まで。
+        devicePixelRatio: Math.min(window.devicePixelRatio || 1, 2),
+        // セーブはゲーム側でも同期するが、念のため自動同期も入れる
+        autoSyncPersistentDataPath: true,
+      };
+
+      var started = false;
+      function startLoading() {
+        if (started) return;
+        started = true;
+        document.querySelector("#mobile").hidden = true;
+        var loading = document.querySelector("#loading");
+        var loadingText = document.querySelector("#loading-text");
+        var barFull = document.querySelector("#bar-full");
+        loading.hidden = false;
+        var script = document.createElement("script");
+        script.src = buildUrl + "/{{{ LOADER_FILENAME }}}";
+        script.onload = function () {
+          createUnityInstance(canvas, config, function (progress) {
+            barFull.style.width = (100 * progress) + "%";
+            if (progress >= 1) loadingText.textContent = "準備中…"; // 読み込みの後、ゲームが始まるまで少しかかる
+          }).then(function (unityInstance) {
+            unityInst = unityInstance;
+            syncDpr();
+            loading.hidden = true;
+            canvas.focus(); // すぐにキーボードで遊べるように
+          }).catch(function (message) {
+            loading.hidden = true;
+            showMessage("読み込みに失敗しました：" + message + "　" + RETRY_HINT, "error");
+          });
+        };
+        script.onerror = function () {
+          loading.hidden = true;
+          showMessage("読み込みに失敗しました（Build フォルダが見つかりません）。" + RETRY_HINT, "error");
+        };
+        document.body.appendChild(script);
+      }
+
+      // スマートフォン・タブレット（iPad は Mac と同じ名乗りのことがある）：読み込みを始めず、パソコンで遊ぶよう案内する
+      var ua = navigator.userAgent;
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(ua) || (navigator.maxTouchPoints > 1 && /Macintosh/.test(ua));
+      if (isMobile) {
+        document.querySelector("#mobile").hidden = false;
+        document.querySelector("#mobile-load").onclick = startLoading;
+      } else {
+        startLoading();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad432a4d7165a649889750c0f6d1d2a, type: 3}
+  m_Name: Slide
+  m_EditorClassIdentifier: CopyCommand::CopyCommand.CommandData
+  displayName: "\u6ED1\u8D70"
+  type: 9
+  description: "\u58C1\u30FB\u30E6\u30CB\u30C3\u30C8\u30FB\u7AEF\u306B\u3076\u3064\u304B\u308B\u307E\u3067\u9032\u3080\u3002\u901A\u3063\u305F\u30C8\u30B2\u306F\u6BCE\u56DE\u8E0F\u3080"
+  copyNote: "\u6575\u3082\u6B62\u307E\u308B\u307E\u3067\u6ED1\u308B\u3002\u6B62\u307E\u308B\u4F4D\u7F6E\u306F\u6575\u3054\u3068\u306B\u5168\u304F\u9055\u3046\uFF08\u30BA\u30EC\u304C\u6700\u5927\uFF09"
+  minDistance: 0
+  maxDistance: 0
+  damage: 0
+  range: 1

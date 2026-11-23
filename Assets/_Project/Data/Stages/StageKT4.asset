@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4bd3a7850d11d4aaa7a7b41fb6a4b5, type: 3}
+  m_Name: StageKT4
+  m_EditorClassIdentifier: CopyCommand::CopyCommand.StageData
+  stageTitle: "KT4 \u93A7\u306E\u53CC\u5B50"
+  buttonLabel: KT4
+  isTestStage: 1
+  tutorialText: "\u53CD\u97FF\u93A7\u51752\u4F53\uFF1A\u3042\u306A\u305F\u306E\u6280\u306F1\u3057\u304B\u901A\u3089\u306A\u3044\u3002\u307E\u306D\u653B\u6483\u304C\u5F53\u305F\u308B\u3068\u93A7\u304C\u5272\u308C\u308B\u3002\u53F3\u4E0A\u306F\u5168\u307E\u306D\u3001\u5DE6\u306F\u6280\u307E\u306D\uFF08\u6B69\u304B\u306A\u3044\uFF09\u3002\n\u5263\u5175\u306F\u30BF\u30FC\u30F3\u306E\u7D42\u308F\u308A\u306B\u96A34\u30DE\u30B9\u3092\u65AC\u308B\uFF083\u30FB\u6575\u306B\u3082\uFF09\u3002\u96A3\u304B\u3089\u76F4\u63A5\u6BB4\u308B\u3068\u65AC\u308A\u8FD4\u3059\uFF082\uFF09\u3002"
+  hintAfterFirstTurn: 
+  visualTheme: {fileID: 11400000, guid: f4bce0599b2a8e7448c4c1faf1f3b230, type: 2}
+  map: '.....R.
+
+    .......
+
+    .#.....
+
+    .R...S.
+
+    .......
+
+    ...P...'
+  playerMaxHp: 20
+  playerStartHp: 0
+  enemyMaxHp: 8
+  spikeDamage: 3
+  maxSlots: 3
+  availableCommands:
+  - {fileID: 11400000, guid: 1926eb297154f494aa855d10d989b60b, type: 2}
+  - {fileID: 11400000, guid: 33cfc61658fd00745bae6e602db3083b, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: 04c35dcf50501ec4494cd446c02bc20f, type: 2}
+  handTestDeck:
+  - {fileID: 11400000, guid: 1926eb297154f494aa855d10d989b60b, type: 2}
+  - {fileID: 11400000, guid: 1926eb297154f494aa855d10d989b60b, type: 2}
+  - {fileID: 11400000, guid: 33cfc61658fd00745bae6e602db3083b, type: 2}
+  - {fileID: 11400000, guid: 33cfc61658fd00745bae6e602db3083b, type: 2}
+  - {fileID: 11400000, guid: 1a7eb22f23e9a9b4cb6dedbc75ff94cc, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: c1511cd85a3648948a3c612ae998942b, type: 2}
+  - {fileID: 11400000, guid: e458d45a99241cc49ad9fcbfb44ac257, type: 2}
+  - {fileID: 11400000, guid: 04c35dcf50501ec4494cd446c02bc20f, type: 2}
+  - {fileID: 11400000, guid: 16192e430aa734a478b29006e1c6685e, type: 2}
+  handTestDeckLarge:
+  - {fileID: 11400000, guid: 1926eb297154f494aa855d10d989b60b, type: 2}
+  - {fileID: 11400000, guid: 1926eb297154f494aa855d10d989b60b, type: 2}
+  - {fileID: 11400000, guid: 33cfc61658fd00745bae6e602db3083b, type: 2}
+  - {fileID: 11400000, guid: 33cfc61658fd00745bae6e602db3083b, type: 2}
+  - {fileID: 11400000, guid: 1a7eb22f23e9a9b4cb6dedbc75ff94cc, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: c1511cd85a3648948a3c612ae998942b, type: 2}
+  - {fileID: 11400000, guid: e458d45a99241cc49ad9fcbfb44ac257, type: 2}
+  - {fileID: 11400000, guid: 04c35dcf50501ec4494cd446c02bc20f, type: 2}
+  - {fileID: 11400000, guid: 16192e430aa734a478b29006e1c6685e, type: 2}
+  handTestOpeningCount: 5
+  handTestKeepOrder: 1
+  handTestGuaranteeAttack: 1
+  stagnationAllowed: 1
+  stagnationMax: 3
+  stagnationPenalties: 020000000300000004000000i
+  enemyFacings: 
+  firePatterns: []
+  fireDamage: 3
+  fireAfterKnightHalf: 0
+  runeUses: 3
+  runeHeal: 3
+  healTileAmount: 4
+  copySandbox: 0
+  copyMode: 0
+  enemyHpList: 9,9,8
+  sandboxGoal: "\u6226\u8853\uFF1A\u4E92\u3044\u3092\u65AC\u308C\u308B\u53CD\u97FF\u93A7\u51752\u4F53\uFF08P2b \u3092\u6226\u95D8\u3078\uFF09"
+  enemyCopyTypes: ATA
+  copyLab: 0
+  coreGuard: 0
+  goal: 0
+  goalText: "\u6575\u3092\u5168\u54E1\u5012\u305B"
+  statueFacings: 
+  statueSpin: 0
+  circleGuard: 0
+  puzzleRoom: 0
+  combatRoom: 1
+  turnLimit: 0
+  combatV4: 0
+  noClocks: 0
+  stillEnemies: 0
+  bomberAim: 
+  clocksReady: 0
+  clocksReadyOnly: 
+  clockKeep: 0
+  tutorialStep: 0
+  hazardName: 
+  enemyInnateAction: {fileID: 0}
+  altMaps: []

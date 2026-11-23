@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad432a4d7165a649889750c0f6d1d2a, type: 3}
+  m_Name: Tailwind
+  m_EditorClassIdentifier: CopyCommand::CopyCommand.CommandData
+  displayName: "\u8FFD\u3044\u98A8"
+  type: 1
+  description: "1\u30DE\u30B9\u9032\u3080\u3002\u307E\u306D\u305F\u6575\u306F2\u30DE\u30B9\u9032\u3080"
+  copyNote: "\u6575\uFF08\u307E\u308B\u307E\u306D\u30FB\u8DB3\u307E\u306D\uFF09\u306F2\u30DE\u30B9\u9032\u3080\u3002\u6575\u3060\u3051\u9060\u304F\u3078\u904B\u3076\uFF08\u30C8\u30B2\u30FB\u8E0F\u307F\u677F\u30FB\u5186\uFF09"
+  minDistance: 1
+  maxDistance: 1
+  damage: 0
+  range: 1
+  notCopied: 0
+  copyMirrored: 0
+  copyDamageCut: 0
+  copyDistanceCut: -1
+  exhaust: 0
+  selfInert: 0

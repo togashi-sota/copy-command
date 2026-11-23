@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad432a4d7165a649889750c0f6d1d2a, type: 3}
+  m_Name: Push
+  m_EditorClassIdentifier: CopyCommand::CopyCommand.CommandData
+  displayName: "\u62BC\u3057\u51FA\u3057"
+  type: 3
+  description: "\u96A3\u306E\u30E6\u30CB\u30C3\u30C8\u30921\u30DE\u30B9\u62BC\u3059"
+  copyNote: "\u6575\u3082\u540C\u3058\u65B9\u5411\u3078\u62BC\u3059\u3002\u6575\u306B\u5411\u304B\u3063\u3066\u62BC\u305B\u3070\u307E\u306D\u306F\u7A7A\u632F\u308A\u30022\u4EBA\u306E\u4F4D\u7F6E\u95A2\u4FC2\u3092\u5909\u3048\u3089\u308C\u308B"
+  minDistance: 0
+  maxDistance: 0
+  damage: 0
+  range: 1

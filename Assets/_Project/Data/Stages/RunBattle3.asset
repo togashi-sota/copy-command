@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4bd3a7850d11d4aaa7a7b41fb6a4b5, type: 3}
+  m_Name: RunBattle3
+  m_EditorClassIdentifier: CopyCommand::CopyCommand.StageData
+  stageTitle: "\u4E2D\u592E\u306E\u5CF6"
+  buttonLabel: R3
+  isTestStage: 0
+  tutorialText: "\u6700\u5F8C\u306E\u6575\u306E\u56FA\u6709\u884C\u52D5\u306F\u3010\u5341\u5B57\u65AC\u308A\u3011\uFF1A\u4E0A\u4E0B\u5DE6\u53F3\u30782\u30DE\u30B9\u307E\u3067\u5C4A\u304F\uFF08\u58C1\u3067\u6B62\u307E\u308B\uFF09\u3002\u307E\u3063\u3059\u3050\u4E0B\u304C\u3063\u3066\u3082\u9003\u3052\u3089\u308C\u306A\u3044\u3002\n\u659C\u3081\u3078\u9003\u3052\u308B\u304B\u3001\u67F1\uFF08\u58C1\uFF09\u306E\u9670\u306B\u5165\u308D\u3046\u3002"
+  hintAfterFirstTurn: 
+  map: '.......
+
+    .#.^.#.
+
+    ...E...
+
+    .#.^.#.
+
+    ...P...'
+  playerMaxHp: 12
+  enemyMaxHp: 16
+  spikeDamage: 2
+  maxSlots: 3
+  availableCommands: []
+  enemyInnateAction: {fileID: 11400000, guid: c348488f4187d944f9035edda21238e0, type: 2}

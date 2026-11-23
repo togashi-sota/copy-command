@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4bd3a7850d11d4aaa7a7b41fb6a4b5, type: 3}
+  m_Name: Sandbox_AllCommands
+  m_EditorClassIdentifier: CopyCommand::CopyCommand.StageData
+  stageTitle: "TEST \u5168\u6280\u304A\u8A66\u3057"
+  buttonLabel: T
+  isTestStage: 1
+  tutorialText: "\u52D5\u4F5C\u78BA\u8A8D\u7528\u30024\u3064\u306E\u6280\u30FB\u58C1\uFF08\u6FC3\u3044\u30B0\u30EC\u30FC\uFF09\u30FB\u30C8\u30B2\uFF08\u9EC4\u8272\u306E\u4E09\u89D2\uFF09\u3092\u81EA\u7531\u306B\u8A66\u305B\u307E\u3059\u3002\u6B63\u5F0F\u306A\u30B9\u30C6\u30FC\u30B8\u3067\u306F\u3042\u308A\u307E\u305B\u3093\u3002"
+  hintAfterFirstTurn: 
+  map: '.......
+
+    .#..^..
+
+    .P...E.
+
+    ..^..#.
+
+    .......'
+  playerMaxHp: 12
+  enemyMaxHp: 12
+  spikeDamage: 5
+  maxSlots: 3
+  availableCommands:
+  - {fileID: 11400000, guid: 1926eb297154f494aa855d10d989b60b, type: 2}
+  - {fileID: 11400000, guid: 33cfc61658fd00745bae6e602db3083b, type: 2}
+  - {fileID: 11400000, guid: 1a7eb22f23e9a9b4cb6dedbc75ff94cc, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: 04c35dcf50501ec4494cd446c02bc20f, type: 2}
+  enemyInnateAction: {fileID: 0}

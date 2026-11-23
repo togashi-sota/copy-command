@@ -1,0 +1,7 @@
+{
+    "name": "CopyCommand.Editor",
+    "rootNamespace": "CopyCommand.EditorTools",
+    "references": ["CopyCommand"],
+    "includePlatforms": ["Editor"],
+    "autoReferenced": false
+}

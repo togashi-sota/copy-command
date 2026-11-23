@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad432a4d7165a649889750c0f6d1d2a, type: 3}
+  m_Name: Vault
+  m_EditorClassIdentifier: CopyCommand::CopyCommand.CommandData
+  displayName: "\u8E0F\u307F\u8D8A\u3048"
+  type: 13
+  description: "\u6B63\u9762\u306E\u96A3\u306E\u30E6\u30CB\u30C3\u30C8\u3092\u8D8A\u3048\u3066\u30012\u30DE\u30B9\u5148\u3078\u7740\u5730\u3002\u6B63\u9762\u306B\u8AB0\u3082\u3044\u306A\u3051\u308C\u3070\u7A7A\u632F\u308A"
+  copyNote: "\u6B63\u9762\u306B\u8AB0\u304B\u304C\u3044\u308B\u6575\u3060\u3051\u304C\u8DF3\u3076\u3002\u3042\u306A\u305F\u306E\u80CC\u5F8C\u306E\u6575\u306F\u3001\u3042\u306A\u305F\u3092\u8D8A\u3048\u3066\u524D\u306B\u51FA\u308B"
+  minDistance: 0
+  maxDistance: 0
+  damage: 0
+  range: 1

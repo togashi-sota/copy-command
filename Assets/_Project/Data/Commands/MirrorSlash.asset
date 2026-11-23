@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad432a4d7165a649889750c0f6d1d2a, type: 3}
+  m_Name: MirrorSlash
+  m_EditorClassIdentifier: CopyCommand::CopyCommand.CommandData
+  displayName: "\u53CD\u8EE2\u65AC\u308A"
+  type: 2
+  description: "\u6B63\u9762\u306E\u96A3\u306B3\u30C0\u30E1\u30FC\u30B8\u3002\u6575\u306F\u3053\u306E\u547D\u4EE4\u3092\u53CD\u5BFE\u5411\u304D\u3067\u307E\u306D\u3059\u308B\uFF08\u6B63\u9762\u3067\u65AC\u3063\u305F\u93E1\u5175\u30FB\u9A0E\u58EB\u306F\u65AC\u308A\u8FD4\u3055\u306A\u3044\uFF09"
+  copyNote: "\u666E\u901A\u306E\u6575\u306F\u53CD\u5BFE\u5411\u304D\u306B\u65AC\u308B\uFF08\u6B63\u9762\u306E\u6575\u306F\u65AC\u308A\u8FD4\u3057\u3066\u304F\u308B\uFF09\u3002\u93E1\u5175\u30FB\u9A0E\u58EB\u306F\u4E8C\u91CD\u306B\u53CD\u8EE2\u3057\u3066\u3001\u3042\u306A\u305F\u3068\u540C\u3058\u5411\u304D\uFF1D\u6B63\u9762\u306E\u93E1\u5175\u30FB\u9A0E\u58EB\u304B\u3089\u306F\u8FD4\u3063\u3066\u3053\u306A\u3044\u304C\u3001\u80CC\u5F8C\u306B\u3044\u308C\u3070\u5F53\u305F\u308B"
+  minDistance: 0
+  maxDistance: 0
+  damage: 3
+  range: 1
+  notCopied: 0
+  copyMirrored: 1
+  copyDamageCut: 0
+  copyDistanceCut: 0
+  exhaust: 0

@@ -1,0 +1,9 @@
+﻿start | state=PlayerInput turn=1 | プレイヤー(1, 1) hp=12 | 敵(2, 1) hp=9
+add 斬撃 →右 -> True
+add 押し出し →右 -> True
+add 歩く ↑上 -> True
+  log: ―― ターン 1：あなたの番 ――
+  log: プレイヤー：斬撃 →右 → 敵に 4 ダメージ（残り HP 5）
+  log: プレイヤー：押し出し →右 → 敵を1マス押した／敵がトゲを踏んで 5 ダメージ（残り HP 0）
+  log: 敵の HP が 0 になった！ 勝利
+after T1 | state=Cleared turn=1 | プレイヤー(1, 1) hp=12 | 敵(3, 1) hp=0

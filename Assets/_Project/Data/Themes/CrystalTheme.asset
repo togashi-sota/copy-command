@@ -1,0 +1,549 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b661dc9b27a27ba47af78d67e9e296cb, type: 3}
+  m_Name: CrystalTheme
+  m_EditorClassIdentifier: CopyCommand::CopyCommand.VisualTheme
+  elements:
+  - key: background
+    prefab: {fileID: 2798877129479408957, guid: f9bdff1924288da4f92c5009e84548fa, type: 3}
+  - key: bomb
+    prefab: {fileID: 7360025213956451574, guid: 7f9bf98c572b1f64a807d9fbdabcc99e, type: 3}
+  - key: brazier
+    prefab: {fileID: 973887277020180726, guid: d3b3eb4a530f9d94fbc0fe2959b243ba, type: 3}
+  - key: danger
+    prefab: {fileID: 6676008492156229760, guid: de32bfc69e56e204593336cdf91e281b, type: 3}
+  - key: fire
+    prefab: {fileID: 3503261488808266399, guid: c2aa4e65b03e8ed4086bcaa111a4bc05, type: 3}
+  - key: fire_next
+    prefab: {fileID: 7837561117569536345, guid: 21f82f8f40373f741b5c4bb88521a52e, type: 3}
+  - key: floor_a
+    prefab: {fileID: 5332700645771595631, guid: a16c453bd850b3c42896c16082b5e440, type: 3}
+  - key: floor_b
+    prefab: {fileID: 4343207460081884977, guid: 487489b4c213c21468ad40eedca03135, type: 3}
+  - key: frame_board
+    prefab: {fileID: 1334794850861581901, guid: d59f6bc4adddac54ebb17b096ab16852, type: 3}
+  - key: rune
+    prefab: {fileID: 4396671307596482457, guid: 08fae4f24c2d75745a780e232acc8845, type: 3}
+  - key: select
+    prefab: {fileID: 4375577297728379348, guid: e2c808d93b74b81449da59d93ad69f0c, type: 3}
+  - key: shadow
+    prefab: {fileID: 6012983493115583231, guid: 96968383f5a4fd34096346ebb0772487, type: 3}
+  - key: spike
+    prefab: {fileID: 6006836160791832562, guid: 06c91845b7f8d0148924fe52303829ba, type: 3}
+  - key: vfx_death
+    prefab: {fileID: 7418330671723474803, guid: c802eedb9aa342a449f993c274ebfff8, type: 3}
+  - key: vfx_dust
+    prefab: {fileID: 5470342988886967535, guid: 9c302c4a21b4e8a41825ce56bb9d49bb, type: 3}
+  - key: vfx_explosion
+    prefab: {fileID: 2327684093199595926, guid: 603003e86f399c34086f2d3442d82d60, type: 3}
+  - key: vfx_hit
+    prefab: {fileID: 2584771481302881126, guid: 22efef8d6b632f74284e7d851e2ee9f8, type: 3}
+  - key: vfx_slash
+    prefab: {fileID: 5263755008957853512, guid: 3a35ae6064f16934d9dd21c934ff9ac4, type: 3}
+  - key: wall
+    prefab: {fileID: 2643619450438904284, guid: 41216f828618b744e89cd1815974b557, type: 3}
+  - key: wall_shadow
+    prefab: {fileID: 4950853100108487738, guid: cc2bbdafd37ec704caa7ae6e004fc9aa, type: 3}
+  - key: warp_a
+    prefab: {fileID: 5796938063920701249, guid: 7ef9fef3afaf5aa4e827d1cca534d017, type: 3}
+  - key: warp_b
+    prefab: {fileID: 1279470169499749090, guid: f666344ebc6071843be07bc2e12a4cb2, type: 3}
+  units:
+  - kind: archer
+    down: {fileID: 21300000, guid: 7b6b67ebe4cc0e44d9fa8e8a2dd81fa1, type: 3}
+    up: {fileID: 21300000, guid: c411579a1c472014da73ad25a7596d0e, type: 3}
+    left: {fileID: 21300000, guid: fbf407ed2e4946c4582f6bc93b9596ae, type: 3}
+    right: {fileID: 21300000, guid: a21eef6c89cf91f4481de9438ffdfbf6, type: 3}
+  - kind: beastking
+    down: {fileID: 21300000, guid: d54d1d1efa869334f8ca70ad7e1fd7dc, type: 3}
+    up: {fileID: 21300000, guid: 25a82e1f3b5c76647b0025e0e234ebbb, type: 3}
+    left: {fileID: 21300000, guid: 7f1255edba20c6145bd7112352a3bc44, type: 3}
+    right: {fileID: 21300000, guid: a4ad816b6ef5a394ebc027b84dd558b6, type: 3}
+  - kind: bomber
+    down: {fileID: 21300000, guid: 2f458a97b91021042afad201af9a61d1, type: 3}
+    up: {fileID: 21300000, guid: 4e6fcd5a7161d4c4991884404edaafc0, type: 3}
+    left: {fileID: 21300000, guid: 7f78c65a6f567d04eafd3c78abfbd687, type: 3}
+    right: {fileID: 21300000, guid: d0dda8b4f2f3e064db979cc2405c0eeb, type: 3}
+  - kind: cannon
+    down: {fileID: 21300000, guid: c0a0d46bc63bce7489da8528068ae3af, type: 3}
+    up: {fileID: 21300000, guid: 133f859bd1b46f545b5e324e95c9e188, type: 3}
+    left: {fileID: 21300000, guid: 7b6664391e6a61f408024b63fc904c4e, type: 3}
+    right: {fileID: 21300000, guid: 7929de7be6c08e84084f4174a8396f97, type: 3}
+  - kind: cannonking
+    down: {fileID: 21300000, guid: 9084aef63a0e8044ba9efe9f4af51d71, type: 3}
+    up: {fileID: 21300000, guid: 8688c5ab7f603104c94672f04bf72d45, type: 3}
+    left: {fileID: 21300000, guid: cc31c0c0774f13c4c8c7552335a1ee3e, type: 3}
+    right: {fileID: 21300000, guid: 70f5dd13ecdf07345b67fb456fc962c7, type: 3}
+  - kind: chaser
+    down: {fileID: 21300000, guid: 588c6dd86d0b14f4cad91aa661f9177c, type: 3}
+    up: {fileID: 21300000, guid: 75e3948d792e97b41a7982f100d28e35, type: 3}
+    left: {fileID: 21300000, guid: 43c24dee39b393049a24343b0ee76942, type: 3}
+    right: {fileID: 21300000, guid: a7108d30473113f4c88bd3347e28ff19, type: 3}
+  - kind: clone
+    down: {fileID: 21300000, guid: 2f5ffec0c81e4cc40b6afbf072fee47e, type: 3}
+    up: {fileID: 21300000, guid: 893b225a13afb9d4097880db8835fe96, type: 3}
+    left: {fileID: 21300000, guid: 0713e58bd7db2f240bd853989753a4f8, type: 3}
+    right: {fileID: 21300000, guid: 5d8a1a8ed5a224f40957ec40065360a1, type: 3}
+  - kind: execknight
+    down: {fileID: 21300000, guid: 767e2540e617f0a46861a413fe288687, type: 3}
+    up: {fileID: 21300000, guid: 0cfdf2d1c3ff4e047beede8967191215, type: 3}
+    left: {fileID: 21300000, guid: 29e67dada1ea75c44b40cbc791ba1c5c, type: 3}
+    right: {fileID: 21300000, guid: af2e745468359324ab52dd1be88b63db, type: 3}
+  - kind: healer
+    down: {fileID: 21300000, guid: c54697710e3667c4984fe02a9970e0f4, type: 3}
+    up: {fileID: 21300000, guid: bd260977d8f97474a8026c512b48e3af, type: 3}
+    left: {fileID: 21300000, guid: 0338735c8bb9da441ab29a80fbfbdceb, type: 3}
+    right: {fileID: 21300000, guid: d3778705ec827464684c381af859afe0, type: 3}
+  - kind: knight
+    down: {fileID: 21300000, guid: 577ec90d5c1e64e4eb280b01b2da285b, type: 3}
+    up: {fileID: 21300000, guid: b850522b40e08014ea8a7fae444ca238, type: 3}
+    left: {fileID: 21300000, guid: f2b24afcb2cb566428fab18e308dff08, type: 3}
+    right: {fileID: 21300000, guid: 03ed7d7cddaf4644685c551dff074c05, type: 3}
+  - kind: mirror
+    down: {fileID: 21300000, guid: a31cca4f57ce0a547b205052ed46aba5, type: 3}
+    up: {fileID: 21300000, guid: 1faca712339f27d4681bc5eca2ed77cb, type: 3}
+    left: {fileID: 21300000, guid: 03ab28bfb0355e14c89f8e896c202d22, type: 3}
+    right: {fileID: 21300000, guid: 866791be0ed9aed45b46a3a6070041e0, type: 3}
+  - kind: mirrorlord
+    down: {fileID: 21300000, guid: 214e39315cd2df74fbed7c76a1abaf36, type: 3}
+    up: {fileID: 21300000, guid: d5668b0c45f6e604f972ea3194d1a0f2, type: 3}
+    left: {fileID: 21300000, guid: dc7a1f8347965854ca0a806f6194dfd3, type: 3}
+    right: {fileID: 21300000, guid: 34727cd3cfc893040a4ad3e3dc99ec0f, type: 3}
+  - kind: normal
+    down: {fileID: 21300000, guid: 63f4bb8437880d5429273f381ee8f89c, type: 3}
+    up: {fileID: 21300000, guid: a4af87cd04ad7ae4f9393391c02fa6ae, type: 3}
+    left: {fileID: 21300000, guid: 2d44680a2c047a64a883effa9474ed82, type: 3}
+    right: {fileID: 21300000, guid: d96fb817cbd0dd34bbe2b96ca11c91b9, type: 3}
+  - kind: player
+    down: {fileID: 21300000, guid: 201fa25bdacec294fa696bfdf343ea90, type: 3}
+    up: {fileID: 21300000, guid: 3e5024cda7a38ea4fb0a6b40ef5aa4b7, type: 3}
+    left: {fileID: 21300000, guid: 2a6bf936f1e7e5843a235b7160f5fc73, type: 3}
+    right: {fileID: 21300000, guid: 04bb0da98a61cb44d8c329e746ee664d, type: 3}
+  - kind: shield
+    down: {fileID: 21300000, guid: 551a2b625a0cb7e4296c8f476d1ea455, type: 3}
+    up: {fileID: 21300000, guid: d2607fd0b0e361d45947fa72a2dbba00, type: 3}
+    left: {fileID: 21300000, guid: 4bd5e763cfaa7eb488baed00bf29ad22, type: 3}
+    right: {fileID: 21300000, guid: 367496c1b7907d14598973ef7e7ae60a, type: 3}
+  - kind: spearman
+    down: {fileID: 21300000, guid: 6c57bf29a237f3b4b962bbbc2f52758e, type: 3}
+    up: {fileID: 21300000, guid: f1dba487e97c6764cb5602571c7efcda, type: 3}
+    left: {fileID: 21300000, guid: eb32ca8ad7372914eba6791b40475bfb, type: 3}
+    right: {fileID: 21300000, guid: a88402e18962046498fcd79226721222, type: 3}
+  - kind: statue
+    down: {fileID: 21300000, guid: e06f9c4b0c25c794698dd5f939d3f922, type: 3}
+    up: {fileID: 21300000, guid: f1ce13aef24975347a723acc6ad340b9, type: 3}
+    left: {fileID: 21300000, guid: 434ed75d8b18ae94795884f966fe528c, type: 3}
+    right: {fileID: 21300000, guid: b6fea6844eb2dae4b9a0eac0086f4950, type: 3}
+  - kind: swordsman
+    down: {fileID: 21300000, guid: 853d6aeab8e1c504b8cebe0e8667f840, type: 3}
+    up: {fileID: 21300000, guid: e9314a421771e974aa5917ecc5b54598, type: 3}
+    left: {fileID: 21300000, guid: 369a37a4894dbd34f8579462303d781f, type: 3}
+    right: {fileID: 21300000, guid: 9fcbb9a421843a649a30835fca1d371a, type: 3}
+  decoChance: 0.18
+  flashMaterial: {fileID: 2100000, guid: 8de4d58b273220048a60a44424f03b6c, type: 2}
+  ui:
+  - name: badge_attack
+    texture: {fileID: 2800000, guid: 8672c666211c5ef428467c5607a0d168, type: 3}
+    border: 0
+  - name: badge_control
+    texture: {fileID: 2800000, guid: 98bf0d78748e0944382826ae81a8b40c, type: 3}
+    border: 0
+  - name: badge_move
+    texture: {fileID: 2800000, guid: 87d2ffc694d00d64eb6961cc6a6e2d8e, type: 3}
+    border: 0
+  - name: badge_support
+    texture: {fileID: 2800000, guid: 879131328bba12149b0c2a8bf8dd3b08, type: 3}
+    border: 0
+  - name: button_gold
+    texture: {fileID: 2800000, guid: a15617e9b81a9794a9a1aab9bf2825ab, type: 3}
+    border: 20
+  - name: button_hover
+    texture: {fileID: 2800000, guid: 3cada6f7b4e733a4f934c406a54fe91e, type: 3}
+    border: 20
+  - name: button_normal
+    texture: {fileID: 2800000, guid: 9d6e1071e2cab7544b922d518ccf8b4a, type: 3}
+    border: 20
+  - name: card_attack
+    texture: {fileID: 2800000, guid: 01366909a18a8214da55b18b09af35cc, type: 3}
+    border: 24
+  - name: card_control
+    texture: {fileID: 2800000, guid: 304ca7067f3ac1d43b9e55151661832c, type: 3}
+    border: 24
+  - name: card_move
+    texture: {fileID: 2800000, guid: e8b43fd36a4ce5c4db56d6f07fd3c6ac, type: 3}
+    border: 24
+  - name: card_support
+    texture: {fileID: 2800000, guid: a978644b857e9de4ba84d0ceaa42dda0, type: 3}
+    border: 24
+  - name: cardart_around
+    texture: {fileID: 2800000, guid: 7190a2cf2dbf7a84a9e3e8e07db3619d, type: 3}
+    border: 0
+  - name: cardart_blink
+    texture: {fileID: 2800000, guid: 8eb1d26382deb7d4e847a44f17ff6c3c, type: 3}
+    border: 0
+  - name: cardart_dash
+    texture: {fileID: 2800000, guid: 92d84105ca1e6c248986a520573a56c6, type: 3}
+    border: 0
+  - name: cardart_diagonal
+    texture: {fileID: 2800000, guid: 1949f819da5ddef41ae0c2cbd0ebcaf0, type: 3}
+    border: 0
+  - name: cardart_foresight
+    texture: {fileID: 2800000, guid: 49853bd85816fed48a871b5a3ea94381, type: 3}
+    border: 0
+  - name: cardart_jump
+    texture: {fileID: 2800000, guid: f7dea4e614a8866488c10059aff9642b, type: 3}
+    border: 0
+  - name: cardart_mirrorslash
+    texture: {fileID: 2800000, guid: 6b3b353492af0d64cadfdb660eaf062e, type: 3}
+    border: 0
+  - name: cardart_pierce
+    texture: {fileID: 2800000, guid: c609fef9339a54b44b1f690037e9153d, type: 3}
+    border: 0
+  - name: cardart_pull
+    texture: {fileID: 2800000, guid: d26d0e163222baa4e91fa85ecb4afd17, type: 3}
+    border: 0
+  - name: cardart_push
+    texture: {fileID: 2800000, guid: 8e1565d105212cb418521c48a594b6a9, type: 3}
+    border: 0
+  - name: cardart_pushslash
+    texture: {fileID: 2800000, guid: 9b1110b2ff25ff0458d0d46eb18e1971, type: 3}
+    border: 0
+  - name: cardart_rally
+    texture: {fileID: 2800000, guid: 564913f14f811eb41b80937e03fa5307, type: 3}
+    border: 0
+  - name: cardart_reconsider
+    texture: {fileID: 2800000, guid: 99999140bc3329641825973f8c33212c, type: 3}
+    border: 0
+  - name: cardart_reverse
+    texture: {fileID: 2800000, guid: 20bdf032b393be34e98d5d8ed4e39ceb, type: 3}
+    border: 0
+  - name: cardart_rush
+    texture: {fileID: 2800000, guid: f8ec260b554c8d5419e4586b98699a76, type: 3}
+    border: 0
+  - name: cardart_slash
+    texture: {fileID: 2800000, guid: 2b77bc5ae7ed33248946117859054a1e, type: 3}
+    border: 0
+  - name: cardart_slide
+    texture: {fileID: 2800000, guid: daf088a07f852d5468bfbcf5f65f516f, type: 3}
+    border: 0
+  - name: cardart_sneak
+    texture: {fileID: 2800000, guid: 3369c807cc57c574eb8dbeabcd62a642, type: 3}
+    border: 0
+  - name: cardart_spike
+    texture: {fileID: 2800000, guid: d22f7793c28e2914bb30550aeeb94c47, type: 3}
+    border: 0
+  - name: cardart_spirit
+    texture: {fileID: 2800000, guid: cf07ca38b8d32744783986024eaa560a, type: 3}
+    border: 0
+  - name: cardart_swap
+    texture: {fileID: 2800000, guid: f61981e8eba758e4a867712dd5d32376, type: 3}
+    border: 0
+  - name: cardart_sweep
+    texture: {fileID: 2800000, guid: 6fb32ff96221da9499919682379c820f, type: 3}
+    border: 0
+  - name: cardart_tac_breath
+    texture: {fileID: 2800000, guid: 41fbe8beff2853741bed910ef41b5618, type: 3}
+    border: 0
+  - name: cardart_tac_detonate
+    texture: {fileID: 2800000, guid: d24544250e97b534d8e3ee1ee2945ca9, type: 3}
+    border: 0
+  - name: cardart_tac_earlybell
+    texture: {fileID: 2800000, guid: e6534637e53a9ce49a64457767501591, type: 3}
+    border: 0
+  - name: cardart_tac_echo
+    texture: {fileID: 2800000, guid: d6ebaa1669774114dabce78091721f84, type: 3}
+    border: 0
+  - name: cardart_tac_focus
+    texture: {fileID: 2800000, guid: 1fa587a1fa4a7af4ebd19bd4194dcc0b, type: 3}
+    border: 0
+  - name: cardart_tac_greatmuster
+    texture: {fileID: 2800000, guid: a823549f21efd5546b65a6cb826d9f51, type: 3}
+    border: 0
+  - name: cardart_tac_guard
+    texture: {fileID: 2800000, guid: 4ab155aa9528c874a8f6914522b77a23, type: 3}
+    border: 0
+  - name: cardart_tac_latebell
+    texture: {fileID: 2800000, guid: ca7a1e69217ff104dae8b7934f4d7909, type: 3}
+    border: 0
+  - name: cardart_tac_mend
+    texture: {fileID: 2800000, guid: dead33a1c3285174dbb6cbd3afe50034, type: 3}
+    border: 0
+  - name: cardart_tac_mimic
+    texture: {fileID: 2800000, guid: 4a874e43d3f4ca145a17f7c8e3b123af, type: 3}
+    border: 0
+  - name: cardart_tac_muster
+    texture: {fileID: 2800000, guid: c2a66c1ff0a4e8d44904089c498dfc34, type: 3}
+    border: 0
+  - name: cardart_tac_parry
+    texture: {fileID: 2800000, guid: f12639d4531235c4a85882809c0a0518, type: 3}
+    border: 0
+  - name: cardart_tac_pursuit
+    texture: {fileID: 2800000, guid: 6b9f9934c1ccb12459375b98617b80c9, type: 3}
+    border: 0
+  - name: cardart_tac_recall
+    texture: {fileID: 2800000, guid: beac984602b2ee54981d44b31e7c81c9, type: 3}
+    border: 0
+  - name: cardart_tac_retarget
+    texture: {fileID: 2800000, guid: e391b5fa7d681ec4cad0f59eef46dccb, type: 3}
+    border: 0
+  - name: cardart_tac_roar
+    texture: {fileID: 2800000, guid: 677ba3d0ec119464c9ba844858c6effd, type: 3}
+    border: 0
+  - name: cardart_tac_sift
+    texture: {fileID: 2800000, guid: 25fce063eaf660d4684d6bc2cc8487ac, type: 3}
+    border: 0
+  - name: cardart_tac_silence
+    texture: {fileID: 2800000, guid: 404ddd08970c07243a136811364c1ee1, type: 3}
+    border: 0
+  - name: cardart_tac_tangle
+    texture: {fileID: 2800000, guid: 01d2658a8e6cfae46ae7a61183d01eeb, type: 3}
+    border: 0
+  - name: cardart_tac_toll
+    texture: {fileID: 2800000, guid: 597a2e7434d8fa7418c4720ac84ee861, type: 3}
+    border: 0
+  - name: cardart_tac_weight
+    texture: {fileID: 2800000, guid: 195a416a9fd9eda46a2dcfbd1f5bf118, type: 3}
+    border: 0
+  - name: cardart_thrust
+    texture: {fileID: 2800000, guid: b251c1088f044eb428af3fdc9a413951, type: 3}
+    border: 0
+  - name: cardart_vault
+    texture: {fileID: 2800000, guid: 5caa3d4fe7124124dbe2d0835faa1d4b, type: 3}
+    border: 0
+  - name: cardart_walk
+    texture: {fileID: 2800000, guid: b4000abc28bed0145b85267737e44527, type: 3}
+    border: 0
+  - name: cardart_wallkick
+    texture: {fileID: 2800000, guid: 47b8f5c8484f50a43b4da82607cc0441, type: 3}
+    border: 0
+  - name: door_battle
+    texture: {fileID: 2800000, guid: 1ace11139dace2b48b79f3685af32873, type: 3}
+    border: 0
+  - name: door_boss
+    texture: {fileID: 2800000, guid: ff3f98fca3363034da9691212deb4065, type: 3}
+    border: 0
+  - name: door_danger
+    texture: {fileID: 2800000, guid: 72b2e5725c273984bb30585d74dc57b6, type: 3}
+    border: 0
+  - name: door_event
+    texture: {fileID: 2800000, guid: fdbaf0f93cfae3d4e8087f901f66ef88, type: 3}
+    border: 0
+  - name: door_rest
+    texture: {fileID: 2800000, guid: b884dc157ae9fb747ba041518aa836e7, type: 3}
+    border: 0
+  - name: door_shop
+    texture: {fileID: 2800000, guid: 095df301dc8592d49ade628756d330d3, type: 3}
+    border: 0
+  - name: hz_aim
+    texture: {fileID: 2800000, guid: d406df8e8e31b744ea26798dd745804c, type: 3}
+    border: 0
+  - name: hz_arrow
+    texture: {fileID: 2800000, guid: 5a278e2d8ec3d2a4cae2bf56db48c713, type: 3}
+    border: 0
+  - name: hz_barrel
+    texture: {fileID: 2800000, guid: 6c2cceb62cf28d2408d0dcba02383c6e, type: 3}
+    border: 0
+  - name: hz_big
+    texture: {fileID: 2800000, guid: 76f02b7034ad39a4793d7e182af3fcc7, type: 3}
+    border: 0
+  - name: hz_blast
+    texture: {fileID: 2800000, guid: 9a3516d2460557842ba6ace6b7ec25d2, type: 3}
+    border: 0
+  - name: hz_clock
+    texture: {fileID: 2800000, guid: 2476c2a9b9de5d74093eec37bd6f0a91, type: 3}
+    border: 0
+  - name: hz_ember
+    texture: {fileID: 2800000, guid: fa91da21bc5c71548a9007cdcb8af66d, type: 3}
+    border: 0
+  - name: hz_emitter
+    texture: {fileID: 2800000, guid: 8699f6735fa62c24aac067814fa31f09, type: 3}
+    border: 0
+  - name: hz_flame
+    texture: {fileID: 2800000, guid: 85c5eb95aaf000846b4e7e12824d101d, type: 3}
+    border: 0
+  - name: hz_heal
+    texture: {fileID: 2800000, guid: e0be362b00ec5114fa79d601f726d5d9, type: 3}
+    border: 0
+  - name: hz_pillar
+    texture: {fileID: 2800000, guid: 8f91174da4c4de441b4ec2a08a6b74ee, type: 3}
+    border: 0
+  - name: hz_rock
+    texture: {fileID: 2800000, guid: ad95c0a766cba2446a11b4f89d2e5873, type: 3}
+    border: 0
+  - name: hz_rock_shadow
+    texture: {fileID: 2800000, guid: 62d51500025c8c242a18647ebb42a76b, type: 3}
+    border: 0
+  - name: hz_rune
+    texture: {fileID: 2800000, guid: b9dc21d44baefae419cbdb8da5f24ef6, type: 3}
+    border: 0
+  - name: hz_sword
+    texture: {fileID: 2800000, guid: b52cfe41ae4bcaa4cb8832b2333cd0d0, type: 3}
+    border: 0
+  - name: ic_attack
+    texture: {fileID: 2800000, guid: da1b8616dfab06f4eb06f6afb1849c77, type: 3}
+    border: 0
+  - name: ic_control
+    texture: {fileID: 2800000, guid: 6529e9f20338ed04bb8ee8bd80319fea, type: 3}
+    border: 0
+  - name: ic_copy
+    texture: {fileID: 2800000, guid: a737c746b4a905c41aea0298434c18b9, type: 3}
+    border: 0
+  - name: ic_move
+    texture: {fileID: 2800000, guid: 6938e4621dc2a6f4ab941bb879639438, type: 3}
+    border: 0
+  - name: ic_nocopy
+    texture: {fileID: 2800000, guid: 6f9460da80776774fb99e40b12d147fc, type: 3}
+    border: 0
+  - name: ic_pull
+    texture: {fileID: 2800000, guid: fccbb906eee1ae841b8d5b50cd12fea0, type: 3}
+    border: 0
+  - name: ic_push
+    texture: {fileID: 2800000, guid: 2cc19e90607e3c94d95276bba0955a72, type: 3}
+    border: 0
+  - name: ic_selfhit
+    texture: {fileID: 2800000, guid: 7f02919b9407d4e45875e083799438a6, type: 3}
+    border: 0
+  - name: ic_support
+    texture: {fileID: 2800000, guid: f20e5f73a3b9b934eb58cca835e7b97c, type: 3}
+    border: 0
+  - name: ic_tactic
+    texture: {fileID: 2800000, guid: 70bbe42afca8fac4a9419ec8b94a65d8, type: 3}
+    border: 0
+  - name: kind_archer
+    texture: {fileID: 2800000, guid: 37539aba2d49fef42a0300b990de44f6, type: 3}
+    border: 0
+  - name: kind_beastking
+    texture: {fileID: 2800000, guid: a54b0ab2b50479e4baba6b12f3c317e7, type: 3}
+    border: 0
+  - name: kind_bomber
+    texture: {fileID: 2800000, guid: a8ee39c875a9b0b4f961519395a9c555, type: 3}
+    border: 0
+  - name: kind_cannon
+    texture: {fileID: 2800000, guid: fb17a63709a2f0244aa2576478b300e7, type: 3}
+    border: 0
+  - name: kind_cannonking
+    texture: {fileID: 2800000, guid: 4c88536bd8e0937438200030b6b77d48, type: 3}
+    border: 0
+  - name: kind_chaser
+    texture: {fileID: 2800000, guid: d89cfb2cf8e30774ebf40128c7e4259d, type: 3}
+    border: 0
+  - name: kind_clone
+    texture: {fileID: 2800000, guid: 60b0283c27a757d4f8fd123506422ec0, type: 3}
+    border: 0
+  - name: kind_execknight
+    texture: {fileID: 2800000, guid: 3668361e73b50b24889801f194fcbd07, type: 3}
+    border: 0
+  - name: kind_healer
+    texture: {fileID: 2800000, guid: 4539abc86ea58fc4aa665fc9900cb201, type: 3}
+    border: 0
+  - name: kind_knight
+    texture: {fileID: 2800000, guid: 6e7335270bdaaa94b9f122e2578d7a8d, type: 3}
+    border: 0
+  - name: kind_mirror
+    texture: {fileID: 2800000, guid: 9afa2301add248646b00378b3ec2db42, type: 3}
+    border: 0
+  - name: kind_mirrorlord
+    texture: {fileID: 2800000, guid: e6277ec6b28cba9458cad17df6cf875d, type: 3}
+    border: 0
+  - name: kind_normal
+    texture: {fileID: 2800000, guid: 489b0225db6525e4baa8d5d64f9f3573, type: 3}
+    border: 0
+  - name: kind_player
+    texture: {fileID: 2800000, guid: 3470d56f51cd395428ff89760f11409f, type: 3}
+    border: 0
+  - name: kind_shield
+    texture: {fileID: 2800000, guid: cec207efdea90e943b6e2345cfa27011, type: 3}
+    border: 0
+  - name: kind_spearman
+    texture: {fileID: 2800000, guid: d7077c2442d7aa946a17ccf2e95081f0, type: 3}
+    border: 0
+  - name: kind_statue
+    texture: {fileID: 2800000, guid: ac16b597019a5b14c915b974eaa5acd8, type: 3}
+    border: 0
+  - name: kind_swordsman
+    texture: {fileID: 2800000, guid: bdb7b3fc43896704a8ba348f5f0d4932, type: 3}
+    border: 0
+  - name: panel
+    texture: {fileID: 2800000, guid: 46b8a9be4a2833645a36ee3f4b734a0e, type: 3}
+    border: 24
+  - name: panel_red
+    texture: {fileID: 2800000, guid: 11fb446aad7402049a82fd22532cb8f8, type: 3}
+    border: 24
+  - name: portrait_archer
+    texture: {fileID: 2800000, guid: 37d5b17b4c2914c4683f6879a80f68b6, type: 3}
+    border: 0
+  - name: portrait_beastking
+    texture: {fileID: 2800000, guid: 9c5610bf47c90fc459009e0f18e9a7f8, type: 3}
+    border: 0
+  - name: portrait_bomber
+    texture: {fileID: 2800000, guid: 56e06deb4ed02ed43b93497504a94bbf, type: 3}
+    border: 0
+  - name: portrait_cannon
+    texture: {fileID: 2800000, guid: 9adcd67a125d1104b892716315ee758a, type: 3}
+    border: 0
+  - name: portrait_cannonking
+    texture: {fileID: 2800000, guid: cd8ea034fbb8a374e84002442859b42d, type: 3}
+    border: 0
+  - name: portrait_chaser
+    texture: {fileID: 2800000, guid: a51338f8cf8ce22448f8aa9b2331bb5c, type: 3}
+    border: 0
+  - name: portrait_clone
+    texture: {fileID: 2800000, guid: 2beddcf97604f614dadff1230c38281a, type: 3}
+    border: 0
+  - name: portrait_execknight
+    texture: {fileID: 2800000, guid: 93ff24ea1c93e85489eb8136cb550d30, type: 3}
+    border: 0
+  - name: portrait_healer
+    texture: {fileID: 2800000, guid: 823c4be784d2f7e4eb8a91e8c48e25b5, type: 3}
+    border: 0
+  - name: portrait_knight
+    texture: {fileID: 2800000, guid: 466ff3391750f3040a02afe95c9eec80, type: 3}
+    border: 0
+  - name: portrait_mirror
+    texture: {fileID: 2800000, guid: ec21976b65d533748ad2afaffe1234e8, type: 3}
+    border: 0
+  - name: portrait_mirrorlord
+    texture: {fileID: 2800000, guid: 35f6a8697fe6e8b4492575ce9b705154, type: 3}
+    border: 0
+  - name: portrait_normal
+    texture: {fileID: 2800000, guid: c7b6328c8a2229f4db7d2fdb9ad64276, type: 3}
+    border: 0
+  - name: portrait_player
+    texture: {fileID: 2800000, guid: 3060d621d21158a4fa9935790b63a791, type: 3}
+    border: 0
+  - name: portrait_shield
+    texture: {fileID: 2800000, guid: f22ab8aa2ebcfad43bc68911a8963a86, type: 3}
+    border: 0
+  - name: portrait_spearman
+    texture: {fileID: 2800000, guid: 36da00ef23c2ded409be7b5dc0bf7378, type: 3}
+    border: 0
+  - name: portrait_statue
+    texture: {fileID: 2800000, guid: 6eaf88c658e26ac45b2be05a567d65ef, type: 3}
+    border: 0
+  - name: portrait_swordsman
+    texture: {fileID: 2800000, guid: 1e87bda3e5ff7754cbbdaf4eecf96ad3, type: 3}
+    border: 0
+  - name: ribbon_attack
+    texture: {fileID: 2800000, guid: ec60e85f0c2547943a9830b2ef6d7b34, type: 3}
+    border: 0
+  - name: ribbon_control
+    texture: {fileID: 2800000, guid: 5c227f7df2353f449be2f7c408818394, type: 3}
+    border: 0
+  - name: ribbon_move
+    texture: {fileID: 2800000, guid: b31eee649682b4b4a9acafa2cd5d9cd3, type: 3}
+    border: 0
+  - name: ribbon_support
+    texture: {fileID: 2800000, guid: e326837df143ece4e8645229970df936, type: 3}
+    border: 0
+  - name: turn
+    texture: {fileID: 2800000, guid: 01efff5ffd4335044a2b5891f129a222, type: 3}
+    border: 0

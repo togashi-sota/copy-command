@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da4bd3a7850d11d4aaa7a7b41fb6a4b5, type: 3}
+  m_Name: StagePB
+  m_EditorClassIdentifier: CopyCommand::CopyCommand.StageData
+  stageTitle: "PB \u5C01\u7D0B\u306E\u5B88\u8B77\u8005\uFF08\u30DC\u30B9\uFF09"
+  buttonLabel: PB
+  isTestStage: 1
+  tutorialText: "\u6BB5\u968E1 \u4E3B\u3092\u5149\u308B\u7D0B\u306B\u4E57\u305B\u308D\uFF08\u901A\u308B\u3060\u3051\u30FB\u62BC\u3057\u51FA\u3057\u3067\u3082\u3088\u3044\uFF09 \u2192 \u6BB5\u968E2 \u5263\u306E\u50CF\uFF08\u6280\u307E\u306D\uFF09\u306B\u4E3B\u3092\u65AC\u3089\u305B\u308D \u2192 \u6BB5\u968E3 \u4E8C\u3064\u306E\u6838\u3092\u540C\u3058\u30BF\u30FC\u30F3\u306B\uFF081\u3064\u4EE5\u4E0A\u306F\u307E\u306D\uFF09\u3002\n\u6210\u529F\u3059\u308B\u305F\u3073\u306B -8\u3001\u4E3B\u306F\u305D\u306E\u30BF\u30FC\u30F3\u3068\u6B21\u306E\u30BF\u30FC\u30F3\u52D5\u3051\u306A\u3044\uFF08\u7A93\uFF1A\u76F4\u63A5\u653B\u6483\u304C\u52B9\u304F\u3002\u5883\u76EE\u306B\u5C4A\u3044\u305F\u3089\u7A93\u306A\u3057\u3067\u6B21\u306E\u6BB5\u968E\u3078\uFF09\u3002\u5DE8\u5927\u77F3\u624B\uFF1A\u6BB5\u968E1\u306F\u3042\u306A\u305F\u306E\u30DE\u30B9\u3001\u6BB5\u968E2\u304B\u3089\u306F\u5341\u5B57\u3092\u4E88\u544A\u3057\u3001\u6B21\u306E\u30BF\u30FC\u30F3\u306B\u843D\u3061\u308B\uFF08\u4E3B\u306B\u3082\u5F53\u305F\u308B\u304C\u3001\u6BB5\u968E\u306F\u9032\u307E\u306A\u3044\uFF09\u3002"
+  hintAfterFirstTurn: 
+  visualTheme: {fileID: 11400000, guid: 52eea90252606b248aa0a12d862e623e, type: 2}
+  map: '.......
+
+    .c.#.c.
+
+    o....A.
+
+    ...U...
+
+    .A.....
+
+    .#.o.#.
+
+    ...P...'
+  playerMaxHp: 20
+  playerStartHp: 0
+  enemyMaxHp: 8
+  spikeDamage: 3
+  maxSlots: 3
+  availableCommands:
+  - {fileID: 11400000, guid: 1926eb297154f494aa855d10d989b60b, type: 2}
+  - {fileID: 11400000, guid: 33cfc61658fd00745bae6e602db3083b, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: 04c35dcf50501ec4494cd446c02bc20f, type: 2}
+  handTestDeck:
+  - {fileID: 11400000, guid: 1926eb297154f494aa855d10d989b60b, type: 2}
+  - {fileID: 11400000, guid: 1926eb297154f494aa855d10d989b60b, type: 2}
+  - {fileID: 11400000, guid: 33cfc61658fd00745bae6e602db3083b, type: 2}
+  - {fileID: 11400000, guid: 33cfc61658fd00745bae6e602db3083b, type: 2}
+  - {fileID: 11400000, guid: 1a7eb22f23e9a9b4cb6dedbc75ff94cc, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: c1511cd85a3648948a3c612ae998942b, type: 2}
+  - {fileID: 11400000, guid: e458d45a99241cc49ad9fcbfb44ac257, type: 2}
+  - {fileID: 11400000, guid: 04c35dcf50501ec4494cd446c02bc20f, type: 2}
+  - {fileID: 11400000, guid: 16192e430aa734a478b29006e1c6685e, type: 2}
+  handTestDeckLarge:
+  - {fileID: 11400000, guid: 1926eb297154f494aa855d10d989b60b, type: 2}
+  - {fileID: 11400000, guid: 1926eb297154f494aa855d10d989b60b, type: 2}
+  - {fileID: 11400000, guid: 33cfc61658fd00745bae6e602db3083b, type: 2}
+  - {fileID: 11400000, guid: 33cfc61658fd00745bae6e602db3083b, type: 2}
+  - {fileID: 11400000, guid: 1a7eb22f23e9a9b4cb6dedbc75ff94cc, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: 49c1c0e652ac6064c830c8f28d846bad, type: 2}
+  - {fileID: 11400000, guid: c1511cd85a3648948a3c612ae998942b, type: 2}
+  - {fileID: 11400000, guid: e458d45a99241cc49ad9fcbfb44ac257, type: 2}
+  - {fileID: 11400000, guid: 04c35dcf50501ec4494cd446c02bc20f, type: 2}
+  - {fileID: 11400000, guid: 16192e430aa734a478b29006e1c6685e, type: 2}
+  handTestOpeningCount: 5
+  handTestKeepOrder: 1
+  handTestGuaranteeAttack: 1
+  stagnationAllowed: 1
+  stagnationMax: 3
+  stagnationPenalties: 020000000300000004000000i
+  enemyFacings: 
+  firePatterns: []
+  fireDamage: 3
+  fireAfterKnightHalf: 0
+  runeUses: 3
+  runeHeal: 3
+  healTileAmount: 4
+  copySandbox: 0
+  copyMode: 0
+  enemyHpList: 32
+  sandboxGoal: 
+  enemyCopyTypes: 
+  copyLab: 0
+  coreGuard: 0
+  goal: 0
+  goalText: 
+  statueFacings: 
+  statueSpin: 0
+  circleGuard: 0
+  puzzleRoom: 1
+  combatRoom: 0
+  turnLimit: 0
+  combatV4: 0
+  noClocks: 0
+  stillEnemies: 0
+  bomberAim: 
+  clocksReady: 0
+  clocksReadyOnly: 
+  clockKeep: 0
+  tutorialStep: 0
+  hazardName: 
+  enemyInnateAction: {fileID: 0}
+  altMaps: []
