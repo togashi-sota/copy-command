@@ -4,8 +4,8 @@
 マス目の上で戦う、1人用の戦術ローグライク（PC・日本語）です。
 自分が出した命令を、敵もそれぞれの位置からまねます。わざと外した攻撃が、まねた敵には当たる——敵を使って敵を倒すゲームです。
 
-**▶ ブラウザで遊ぶ：準備中**（今の版で作り直してから、https://togashi-sota.github.io/copy-command/ に置きます）
-（パソコンの Chrome／Edge。スマホ・タブレットには対応していません）
+**▶ ブラウザで遊ぶ：https://togashi-sota.github.io/copy-command/**
+（パソコンの Chrome／Edge。スマホ・タブレットには対応していません。最初の読み込みに少し時間がかかります）
 タイトル画面の「5分でこのゲームを体験」から、まねのしくみを短く遊べます。
 
 > 個人制作。企画は本人、プログラムの大部分は生成 AI の Claude Code が書きました（下の「作り方」）。
@@ -44,6 +44,7 @@ Assets/_Project/Scripts/        ゲームの本体（C#）
 Assets/_Project/Tests/EditMode/ 自動テスト
 Assets/_Project/Editor/         ビルドの道具と、遊びのバランスを調べるシミュレーション
 Assets/WebGLTemplates/          ブラウザ版のページ
+docs/                           ブラウザ版（このフォルダのコードを Unity でビルドしたもの。GitHub Pages で公開）
 ```
 
 ## ライセンス
